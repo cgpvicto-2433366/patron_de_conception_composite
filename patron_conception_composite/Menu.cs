@@ -59,7 +59,7 @@ namespace patron_conception_composite
         }
 
         /// <summary>
-        /// Affiche un menu et ses enfants
+        /// Affiche un menu et ses enfants (utiliser pour le test)
         /// </summary>
         public void Afficher()
         {
