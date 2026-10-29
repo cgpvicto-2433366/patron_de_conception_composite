@@ -17,23 +17,11 @@ namespace patron_conception_composite
         /// Constructeur d'une option
         /// </summary>
         /// <param name="nom">Nom de l'option</param>
-        /// <param name="actif">État de départ</param>
+        /// <param name="actif">État  l'option</param>
         public Option(string nom, bool actif = true)
         {
             _nom = nom;
             _actif = actif;
-        }
-
-        public string Nom
-        {
-            get { return _nom; }
-            private set => _nom = value;
-        }
-
-        public bool Actif
-        {
-            get { return _actif; }
-            private set => _actif = value;
         }
 
         /// <summary>
@@ -51,6 +39,18 @@ namespace patron_conception_composite
         {
             string etat = _actif ? "actif" : "inactif";
             Console.WriteLine($"Option : {_nom} ({etat})");
+        }
+
+        public string Nom
+        {
+            get { return _nom; }
+            private set => _nom = value;
+        }
+
+        public bool Actif
+        {
+            get { return _actif; }
+            private set => _actif = value;
         }
     }
 }
